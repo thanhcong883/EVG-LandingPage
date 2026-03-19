@@ -1,74 +1,115 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Products = () => {
+  const [activeTab, setActiveTab] = useState(0);
+
   const products = [
     {
-      title: "Compute Engine",
-      description: "Scalable virtual machines tailored for high performance computing needs. Deploy applications instantly with our reliable and secure cloud instances.",
-      icon: (
-        <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
-        </svg>
-      )
+      title: "Cloud Server",
+      features: [
+        "25+ datacenters",
+        "Private/hybrid/on-premises cloud",
+        "AI Infrastructure",
+        "Managed Kubernetes",
+        "Managed Logging",
+        "API & Terraform",
+        "20+ IaaS/PaaS services",
+        "L2 connectivity",
+        "Load balancers",
+        "FaaS",
+        "Free egress traffic"
+      ]
     },
     {
-      title: "Cloud Storage",
-      description: "Secure, durable, and highly available object storage. Store and retrieve any amount of data from anywhere on the web.",
-      icon: (
-        <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-        </svg>
-      )
+      title: "CDN",
+      features: [
+        "1300+ PoPs",
+        "Dynamic content delivery",
+        "Image optimization",
+        "DDoS Protection (L3/L4/L7)",
+        "120+ Tbps capacity",
+        "Anycast infrastructure",
+        "Advanced video streaming",
+        "Integrated WAF"
+      ]
     },
     {
-      title: "Networking",
-      description: "Fast and reliable network infrastructure. Virtual Private Cloud, Load Balancing, and DNS management for your applications.",
-      icon: (
-        <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-        </svg>
-      )
+      title: "Streaming Platform",
+      features: [
+        "Live streaming 1-10s latency",
+        "Real-time HD group video calls",
+        "Unlimited video storage",
+        "Integrated computer vision & ML for content moderation"
+      ]
     },
     {
-      title: "Managed Databases",
-      description: "Fully managed database services. MySQL, PostgreSQL, and Redis databases configured for performance and high availability.",
-      icon: (
-        <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
-        </svg>
-      )
+      title: "Dedicated Server",
+      features: [
+        "Bare metal performance",
+        "Dedicated physical server",
+        "25+ datacenters",
+        "Private/hybrid/on-premises integration",
+        "AI Infrastructure ready",
+        "L2 connectivity",
+        "Free egress traffic"
+      ]
+    },
+    {
+      title: "Security",
+      features: [
+        "DDoS protection",
+        "Bot mitigation",
+        "Vulnerability exploit prevention",
+        "API threat protection"
+      ]
     }
   ];
 
   return (
-    <section className="py-24 bg-white" id="products">
+    <section className="py-24 bg-gray-50" id="products">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">Our Products</h2>
-          <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Cloud Solutions that Scale With You</h3>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Explore Our Products</h2>
           <p className="text-lg text-gray-600">
-            Everything you need to build, deploy, and scale your applications. EVG Cloud provides the comprehensive infrastructure for your business.
+            Comprehensive infrastructure solutions to build, secure, and scale your business.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {products.map((product, index) => (
-            <div key={index} className="product-card bg-white rounded-2xl p-8 border border-gray-100 hover:border-primary/30 shadow-sm relative overflow-hidden group">
-              <div className="bg-[#f0fdfa] rounded-xl w-14 h-14 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                {product.icon}
-              </div>
-              <h4 className="text-xl font-bold text-gray-900 mb-3">{product.title}</h4>
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                {product.description}
-              </p>
-              <a href="#" className="inline-flex items-center text-sm font-semibold text-primary hover:text-primary-dark group-hover:underline">
-                Learn more
-                <svg className="ml-1.5 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </a>
-            </div>
-          ))}
+        <div className="flex flex-col lg:flex-row gap-8">
+          {/* Tabs */}
+          <div className="lg:w-1/4 flex flex-col gap-2">
+            {products.map((product, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveTab(index)}
+                className={`text-left px-6 py-4 rounded-lg font-semibold transition-all duration-200 ${
+                  activeTab === index
+                    ? 'bg-primary text-white shadow-md'
+                    : 'bg-white text-gray-600 hover:bg-gray-100'
+                }`}
+              >
+                {product.title}
+              </button>
+            ))}
+          </div>
+
+          {/* Content */}
+          <div className="lg:w-3/4 bg-white rounded-xl shadow-sm p-8 border border-gray-100">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">{products[activeTab].title} Features</h3>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              {products[activeTab].features.map((feature, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">{feature}</span>
+                </li>
+              ))}
+            </ul>
+            <a href={`#${products[activeTab].title.toLowerCase().replace(/\s+/g, '-')}`} className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-dark transition-colors">
+              Go to {products[activeTab].title}
+            </a>
+          </div>
         </div>
       </div>
     </section>

@@ -8,29 +8,35 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 leading-[1.1] mb-6">
-              Cloud Infrastructure <br className="hidden sm:block" />
-              <span className="text-primary">Built for Performance</span>
+              Everest Global Ecosystem
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-lg leading-relaxed">
-              Deploy, manage, and scale your applications with EVG Cloud's highly reliable and secure cloud platform. Experience enterprise-grade computing at any scale.
+              We offer a diverse information technology ecosystem along with top-tier services, empowering your business to grow and succeed.
             </p>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-8 text-center sm:text-left">
+              <div>
+                <div className="text-2xl font-bold text-gray-900">1300+</div>
+                <div className="text-sm text-gray-500">PoPs</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-gray-900">120+ Tbps</div>
+                <div className="text-sm text-gray-500">Capacity</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-gray-900">70+</div>
+                <div className="text-sm text-gray-500">Locations</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-gray-900">&lt; 40 Ms</div>
+                <div className="text-sm text-gray-500">Latency</div>
+              </div>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#" className="inline-flex justify-center items-center rounded-lg bg-primary px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all">
-                Create Free Account
+                Explore more
               </a>
-              <a href="#" className="inline-flex justify-center items-center rounded-lg bg-white px-6 py-3.5 text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 transition-all">
-                View Pricing
-              </a>
-            </div>
-            <div className="mt-10 flex items-center gap-x-6 text-sm text-gray-500">
-              <div className="flex items-center gap-2">
-                <svg className="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-                $100 Free Credit
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-                No credit card required
-              </div>
             </div>
           </div>
           <div className="relative lg:ml-auto w-full max-w-lg lg:max-w-none">
