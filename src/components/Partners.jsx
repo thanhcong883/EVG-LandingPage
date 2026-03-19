@@ -2,7 +2,7 @@ import React from 'react';
 
 const Partners = () => {
   const partners = [
-    "AWS", "Google Cloud", "Microsoft Azure", "Cloudflare", "Akamai", "Fastly"
+    "Coc Coc", "Viettel Media", "Azota", "Tiki", "BytePlus", "Sohagame"
   ];
 
   return (
