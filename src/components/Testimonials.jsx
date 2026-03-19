@@ -5,7 +5,7 @@ const Testimonials = () => {
     <section className="py-24 bg-[#f8fafc] border-t border-gray-100" id="testimonials">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-sm font-semibold text-[#155eef] uppercase tracking-wider mb-2">Customer Success</h2>
+          <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">Customer Success</h2>
           <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Trusted by the Best</h3>
           <p className="text-lg text-gray-600">
             See how organizations are transforming their businesses and achieving faster growth with EVG Cloud.

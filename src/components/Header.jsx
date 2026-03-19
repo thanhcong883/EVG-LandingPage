@@ -20,7 +20,7 @@ const Header = () => {
           <a href="#" className="hidden md:block text-sm font-medium text-gray-700 hover:text-primary transition-colors">
             Sign In
           </a>
-          <a href="#" className="bg-[#155eef] hover:bg-[#004ecc] text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+          <a href="#" className="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
             Console
           </a>
         </div>

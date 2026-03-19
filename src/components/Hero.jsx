@@ -9,13 +9,13 @@ const Hero = () => {
           <div className="max-w-2xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 leading-[1.1] mb-6">
               Cloud Infrastructure <br className="hidden sm:block" />
-              <span className="text-[#155eef]">Built for Performance</span>
+              <span className="text-primary">Built for Performance</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-lg leading-relaxed">
               Deploy, manage, and scale your applications with EVG Cloud's highly reliable and secure cloud platform. Experience enterprise-grade computing at any scale.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#" className="inline-flex justify-center items-center rounded-lg bg-[#155eef] px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-[#004ecc] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#155eef] transition-all">
+              <a href="#" className="inline-flex justify-center items-center rounded-lg bg-primary px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all">
                 Create Free Account
               </a>
               <a href="#" className="inline-flex justify-center items-center rounded-lg bg-white px-6 py-3.5 text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 transition-all">
@@ -36,7 +36,7 @@ const Hero = () => {
           <div className="relative lg:ml-auto w-full max-w-lg lg:max-w-none">
             <div className="aspect-[4/3] rounded-2xl bg-gray-100/50 object-cover shadow-2xl ring-1 ring-gray-900/10 flex items-center justify-center relative overflow-hidden">
                {/* Placeholder for hero illustration/image matching evgcloud.net */}
-               <div className="absolute inset-0 bg-gradient-to-tr from-[#155eef]/10 to-transparent"></div>
+               <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"></div>
                <img
                  src={heroImg}
                  alt="Cloud Dashboard Illustration"
