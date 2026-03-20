@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#0f172a] text-white pt-20 pb-10 border-t border-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-12 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 lg:gap-12 mb-16">
           <div className="col-span-2 lg:col-span-2">
             <a href="/" className="inline-block mb-6">
                <img src={logo} alt="EVG Cloud" className="h-8 brightness-0 invert" />
@@ -47,6 +47,14 @@ const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Resources</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Career</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold tracking-wider text-white uppercase mb-4">Support Center</h4>
+            <ul className="space-y-3">
+              <li><a href="tel:+84985386150" className="text-gray-400 hover:text-white transition-colors text-sm">Hotline: +84-985386150</a></li>
+              <li><a href="mailto:support@evgcorp.net" className="text-gray-400 hover:text-white transition-colors text-sm">Email: support@evgcorp.net</a></li>
             </ul>
           </div>
         </div>
