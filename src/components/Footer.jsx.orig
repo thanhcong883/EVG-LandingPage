@@ -53,7 +53,7 @@ const Footer = () => {
           <div>
             <h4 className="text-sm font-semibold tracking-wider text-white uppercase mb-4">Support Center</h4>
             <ul className="space-y-3">
-              <li><a href="tel:+84985386150" className="text-gray-400 hover:text-white transition-colors text-sm whitespace-nowrap">Hotline: +84-985386150</a></li>
+              <li><a href="tel:+84985386150" className="text-gray-400 hover:text-white transition-colors text-sm">Hotline: +84-985386150</a></li>
               <li><a href="mailto:support@evgcorp.net" className="text-gray-400 hover:text-white transition-colors text-sm">Email: support@evgcorp.net</a></li>
             </ul>
           </div>
